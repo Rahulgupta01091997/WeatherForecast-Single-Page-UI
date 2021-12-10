@@ -1,0 +1,350 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Montserrat;
+}
+body {
+  background: url(img/wfd-bg-img@2x.png) no-repeat fixed;
+  width: 100%;
+  object-fit: contain;
+  overflow-x: hidden;
+  background-size: 100% 100%;
+}
+.Track-severe-weather {
+  height: 19px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.02px;
+  text-align: center;
+  color: #fff;
+}
+.Track-severe-weather .Text-Style-8 {
+  font-weight: bold;
+  color: #0068d0;
+}
+header {
+  height: 44px;
+  margin: 0 0 141px;
+  /* padding: 13px 340px 12px; */
+  background-color: #f5a623;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Rectangle {
+  width: 60%;
+  height: auto;
+  /* margin: 141px 320px 119px; */
+  margin: 0 auto;
+  padding: 60px 50px 32px;
+  border-radius: 8px;
+  background-color: #fff;
+}
+.Rectangle-inner {
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.Get-Weather-Forecast {
+  /* width: 700px; */
+  margin: 0 0 8px;
+  font-family: Montserrat;
+  font-size: 42px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.67;
+  letter-spacing: 0.05px;
+  text-align: center;
+  color: #333;
+}
+.underline {
+  width: 100px;
+  height: 5px;
+  margin: 0 auto;
+  background-color: #0068d0;
+}
+.Enter-a-Zipcode-Cit {
+  width: 100%;
+  height: 28px;
+  margin: 20px auto;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.75;
+  letter-spacing: 0.02px;
+  text-align: center;
+  color: #333;
+}
+.cityname-outer {
+  width: 75%;
+  height: 42px;
+  margin: 24px auto 0;
+  padding: 0 20px;
+  border-radius: 4px;
+  border: solid 1px #979797;
+  background-color: #f2f2f2;
+  display: flex;
+  align-items: center;
+}
+.locationicon-outer {
+  width: 6%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.locationicon {
+  width: 50%;
+  height: 24px;
+  margin: 0 auto;
+  object-fit: contain;
+}
+.cityname-label-div {
+  width: 94%;
+  display: flex;
+}
+input {
+  background: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 16px;
+}
+select {
+  outline: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  overflow-y: auto;
+  padding: 0 10px;
+  max-height: 100px;
+}
+option {
+  height: 25px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+#citydropdown {
+  display: none;
+  width: 75%;
+  margin: 0 auto;
+  border-left: 1px solid #979797;
+  border-right: 1px solid #979797;
+  border-bottom: 1px solid #979797;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.continuebutton-outer {
+  display: flex;
+  width: 75%;
+  height: 120px;
+  margin: 20px auto;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.18);
+}
+.continuebutton {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.18);
+  background-color: #0068d0;
+  width: 80%;
+  outline: none;
+  border: none;
+  font-family: Montserrat;
+  font-size: 36px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.04px;
+  color: #fff;
+  cursor: pointer;
+}
+.whethericon {
+  width: 20%;
+  background-color: #024e99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+img.Group-Copy {
+  width: 39px;
+  height: 38px;
+  object-fit: contain;
+}
+.By-clicking-above-y {
+  width: 74%;
+  height: 28px;
+  margin: 20px auto 0;
+  font-family: GoogleSans;
+  font-size: 10px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: 0.01px;
+  text-align: center;
+  color: #999;
+}
+footer {
+  height: 98px;
+  margin: 119px 0 0;
+  padding: 32px 0 48px;
+  opacity: 0.5;
+  background-color: black;
+  text-align: center;
+}
+.Privacy-Policy-EUL {
+  /* width: 574px; */
+  height: 18px;
+  font-family: GoogleSans;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.02px;
+  text-align: center;
+  color: #f0f0f0;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  padding-top: 100px;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  left: 0;
+  top: 0;
+}
+.modal-content {
+  width: 50%;
+  height: 180px;
+  background-color: white;
+  border: 1px solid #000;
+  margin: 0 auto;
+}
+.modal-header {
+  /* height: 60px; */
+  padding: 20px 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+.modal-body {
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: 600px;
+  flex-direction: column;
+}
+.close-modal {
+  outline: none;
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+  font-size: 18px;
+}
+@media only screen and (max-width: 767px) {
+  header {
+    margin: 0 0 50px;
+  }
+  body {
+    height: auto;
+  }
+  .Track-severe-weather {
+    font-size: 14px;
+    height: auto;
+  }
+  .Rectangle {
+    width: 80%;
+    padding: 40px 10px;
+    height: auto;
+  }
+  .Get-Weather-Forecast {
+    font-size: 20px;
+  }
+  .underline {
+    width: 80px;
+  }
+  .Enter-a-Zipcode-Cit {
+    margin: 20px auto;
+    font-size: 15px;
+  }
+  .continuebutton-outer {
+    width: 100%;
+    height: 80px;
+  }
+  .continuebutton {
+    font-size: 25px;
+  }
+  .cityname-outer {
+    width: 100%;
+    padding: 0 5px;
+  }
+  img.Group-Copy {
+    width: 30px;
+    height: 30px;
+  }
+  .By-clicking-above-y {
+    height: auto;
+  }
+  .locationicon-outer {
+    width: 15%;
+  }
+  .cityname-label-div {
+    width: 85%;
+  }
+  #citydropdown {
+    width: 100%;
+  }
+  .modal-content {
+    width: 90%;
+  }
+  footer {
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 968px) and (min-width: 768px) {
+  .Rectangle {
+    height: auto;
+  }
+  .Get-Weather-Forecast {
+    font-size: 34px;
+  }
+  .cityname-outer {
+    width: 90%;
+  }
+  #citydropdown {
+    width: 90%;
+  }
+  .continuebutton-outer {
+    width: 90%;
+    height: 90px;
+  }
+  .locationicon {
+    width: 80%;
+    margin-right: 5px;
+  }
+  .cityname-label-div {
+    width: 92%;
+  }
+  .modal-content {
+    width: 65%;
+  }
+}

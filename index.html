@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <!-- <div class="header-info"> -->
+      <p class="Track-severe-weather Text-Style-3">
+        Track severe weather changes & enjoy custom web search from your new
+        tab. <a href="#" class="Text-Style-8">Get Forecast</a>
+      </p>
+      <!-- </div> -->
+    </header>
+    <main>
+      <div class="Rectangle">
+        <div class="Rectangle-inner">
+          <span class="Get-Weather-Forecast">
+            Get Weather Forecast & Radar!
+          </span>
+        </div>
+        <div class="underline"></div>
+        <div class="Enter-a-Zipcode-Cit Text-Style-7">
+          Enter a Zipcode, City or Place
+        </div>
+        <div class="cityname-outer">
+          <div class="locationicon-outer">
+            <img src="img/icon-24-px@2x.png" class="locationicon" />
+          </div>
+          <div class="cityname-label-div">
+            <!-- <div class="inputvaluediv"> -->
+            <input
+              type="text"
+              id="citynametext"
+              name="city"
+              class="cityname-input"
+              placeholder="Search for your city"
+            />
+            <!-- </div> -->
+          </div>
+        </div>
+        <div id="citydropdown">
+          <select name="citylist" id="citylist"></select>
+        </div>
+        <div class="continuebutton-outer">
+          <button type="button" class="continuebutton" id="continue">
+            CONTINUE
+          </button>
+          <div class="whethericon">
+            <img src="img/group-copy@2x.png" class="Group-Copy" />
+          </div>
+        </div>
+        <div class="By-clicking-above-y">
+          By clicking above, you are agreeing to install Weather Forecast from
+          Chrome™ Web Store and agreeing to abide by the EULA, Privacy Policy,
+          Endorsement Disclaimer & DMCA Policy.
+        </div>
+      </div>
+    </main>
+    <footer>
+      <span class="Privacy-Policy-EUL Text-Style-6">
+        Privacy Policy | EULA | Endorsement Disclaimer and DMCA Policy | Contact
+        Us | Uninstall
+      </span>
+    </footer>
+    <div class="modal" id="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close-modal" id="close" title="close">
+            X
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Forecast in <span id="citynameforecast"></span> 33°C | °F</p>
+          <p>Precipitation: 0%</p>
+          <p>Humidity: 62%</p>
+          <p>Wind:10 km/h</p>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
